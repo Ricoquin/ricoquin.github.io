@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  }
+ 
+ body {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: white;
+    background: url("https://ak0.picdn.net/shutterstock/videos/23047210/thumb/1.jpg") no-repeat center center transparent;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+  }
+ 
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
+ 
+  p {
+    margin-bottom: 0;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 1200;
+    color:white;
+    text-size-adjust: 10%;
+  }
+  
+  h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #dddddd;
+  }
+  
+  h3 {
+    font-size: 22px;
+  }
+  
+  h3, h2 {
+   padding-bottom: 20px;
+   margin-bottom: 15px;
+   line-height: 22px;
+   border-bottom: 2px solid #eeeeee;
+ }
+ 
+  #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #777777;
+    background: whitesmoke;
+    border-bottom: 2px solid #cccccc;
+  }
+  
+  #logo {
+    float: left;
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 90px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    background: whitesmoke; 
+   }
+  
+  nav {
+    float: right;
+    margin-top: 25px;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: black;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  
+  nav a:first-child {
+    border-left: 0 none;
+  }
+  
+  footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: black;
+    color: black;
+    text-align: center;
+    background: whitesmoke;
+    border-top: 8px solid black;
+    height: 50px;
+  }
+  
+  #main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+ 
+    
+  }
+  
+  .main-section {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+  }
+ 
+  /* .image-cropper {
+   width: 150px;
+   height: 150px;
+   overflow: hidden;
+  } */
+ 
+ .profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: 25%;
+ }
