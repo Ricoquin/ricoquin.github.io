@@ -1,7 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+http://meyerweb.com/eric/tools/css/reset/
    v2.0-modified | 20110126
    License: none (public domain)
-*/
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -120,9 +120,9 @@ audio:not([controls]) {
  */
 
 html {
-    font-size: 100%; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    -ms-text-size-adjust: 100%; /* 2 */
+    font-size: 100%; 1
+    -webkit-text-size-adjust: 100%; 2
+    -ms-text-size-adjust: 100%; 2
 }
 
 /**
