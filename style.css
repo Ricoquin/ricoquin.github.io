@@ -11,6 +11,9 @@ body {
   background: url("https://blog.spoongraphics.co.uk/wp-content/uploads/2016/08/thumbnail.jpg");
 }
 
+a{
+  color: #eeeeee;
+}
 /* general */
 
 .container {
