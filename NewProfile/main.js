@@ -1,6 +1,5 @@
 jQuery(document).ready(function ($) {
 
-  // Header fixed and Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -17,10 +16,8 @@ jQuery(document).ready(function ($) {
     return false;
   });
 
-  // Initiate the wowjs
   new WOW().init();
 
-  // Initiate superfish on nav menu
   $('.nav-menu').superfish({
     animation: {
       opacity: 'show'
@@ -28,7 +25,6 @@ jQuery(document).ready(function ($) {
     speed: 400
   });
 
-  // Mobile Navigation
   if ($('#nav-menu-container').length) {
     var $mobile_nav = $('#nav-menu-container').clone().prop({
       id: 'mobile-nav'
@@ -68,7 +64,6 @@ jQuery(document).ready(function ($) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 
-  // Smoth scroll on page hash links
   $('a[href*="#"]:not([href="#"])').on('click', function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 
@@ -103,7 +98,6 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  // Porfolio filter
   $("#portfolio-flters li").click(function () {
     $("#portfolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
@@ -119,12 +113,9 @@ jQuery(document).ready(function ($) {
     }, 300);
   });
 
-  // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
     time: 1000
   });
-
-  // custom code
 
 });
