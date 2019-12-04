@@ -4,7 +4,7 @@
   "description": "RQ Profile",
   "main": "index.js",
   "scripts": {
-    c "sass": "node sass -w scss/ -w css/ --recursive";
+    "sass": "node-sass -w scss/ -o assets/css/ --recursive"
   },
   "repository": {
     "type": "git",
