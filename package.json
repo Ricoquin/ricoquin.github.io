@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/Ricoquin/ricoquin.github.io/issues"
   },
-  "homepage": "https://ricoquin.github.io",
+  "homepage": "https://github.com/Ricoquin/ricoquin.github.io#readme",
   "dependencies": {
     "node-sass": "^4.13.0"
   }
