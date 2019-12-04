@@ -1,0 +1,22 @@
+{
+  "name": "ricoquin.github.io",
+  "version": "1.0.0",
+  "description": "RQ Profile",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o assets/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ricoquin/ricoquin.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ricoquin/ricoquin.github.io/issues"
+  },
+  "homepage": "https://github.com/Ricoquin/ricoquin.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
