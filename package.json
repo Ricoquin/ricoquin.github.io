@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Ricoquin/ricoquin.github.io#readme",
   "dependencies": {
     "node-sass": "^4.13.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2"
   }
 }
