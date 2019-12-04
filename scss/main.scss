@@ -1,6 +1,6 @@
-$primary-background: url 'assets/image/4kMountains.jpg';
+$primary-color: #444;
 
 body {
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif cursive;
+  background: $primary-color;
+  color: aliceblue;
 }
