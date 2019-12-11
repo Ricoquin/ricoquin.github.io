@@ -11,7 +11,7 @@ body {
   line-height: 1.0; }
   html#bg-img,
   body#bg-img {
-    background: url(/assets/image/rico.jpg);
+    background: url(/assets/image/rico.jpg) absolute cover cover fixed;
     background-attachment: fixed;
     background-size: cover; }
     html#bg-img .overlay,
