@@ -1,67 +1,84 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-html,
-body {
-  background: #444;
-  color: white;
-  font-family: 'Trade Winds'cursive;
-  margin: 0;
+/*   Body Area          */
+html {
+  background-image: url('/assets/image/rico.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: rgba(0, 0, 0, 0.3);
+  width: 100%;
   height: 100%;
-  line-height: 1.0; }
-  html#bg-img,
-  body#bg-img {
-    background: url(/assets/image/rico.jpg) absolute cover cover fixed;
-    background-attachment: fixed;
-    background-size: cover; }
-    html#bg-img .overlay,
-    body#bg-img .overlay {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
+}
+
+body {
+  font-family: 'Fredericka the Great', cursive;
+  line-height: 1;
+  color: whitesmoke;
+  padding: 0.7rem;
+  transition: all 1.2s ease-in-out;
+  transition: background-color 0.5s;
+}
 
 h1,
 h2,
 h3 {
-  margin: 0;
-  font-weight: 400; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-size: 6rem; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+  margin-top: 5;
+  font-weight: 400;
+}
+
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 5.5rem;
+}
 
 a {
-  color: #fff;
-  text-decoration: none; }
+  color: white;
+  text-decoration: none;
+}
 
 header {
   position: fixed;
   z-index: 2;
-  width: 100%; }
+  width: 100%;
+}
 
 .text-secondary {
-  color: #eece1a; }
+  color: whitesmoke;
+  font-family: 'Fredericka the Great', cursive;
+  padding: 0.7rem;
+  transition: all 1.2s ease-in-out;
+}
 
 main {
-  padding: 4rem;
-  height: 100%; }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.7rem;
-      transition: all 1.5s ease-out; }
-      main .icons a:hover {
-        color: #eece1a; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
+  padding: 10rem;
+  height: 100%;
+}
+
+main .icons {
+  margin-top: 1rem;
+  color: white;
+}
+
+main .icons a {
+  padding: 0.7rem;
+  transition: all 1.2s ease-in-out;
+}
+
+main .icons a:hover {
+  color: red;
+}
+
+main#home {
+  overflow: hidden;
+}
+
+main#home h1 {
+  margin-top: 45vh;
+}
+
+i {
+  color: red;
+}
