@@ -5,27 +5,29 @@
 /*   Body Area          */
 html {
   background-image: url('/assets/image/darkWoodBG.jpg');
-  background-size: cover;
+  background-size: fill;
   background-repeat: no-repeat;
   position: relative;
   background-image: rgba(0, 0, 0, 0.3);
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
 }
 
-body {
+#mainPage {
+  position: relative;
   font-family: 'Fredericka the Great', cursive;
   line-height: 1;
   color: whitesmoke;
   transition: all 1.2s ease-in-out;
   transition: background-color 0.5s;
+  width: 100%;
+  height: 100%;
 }
 
 /* Main Top Nav */
 
-.rqLogo {
+#rqLogo {
   text-align: center;
-  position: relative;
 }
 
 h1,
@@ -58,6 +60,53 @@ header {
   color: yellow;
 }
 
+/* span {
+  color: #eece1a;
+} */
+
+/* .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+} */
+
+/* .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #eece1a;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+} */
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
 #backColor {
   position: relative;
   background-color: black;
@@ -71,7 +120,6 @@ header {
   position: relative;
   text-align: center;
   word-spacing: 60px;
-  background-image: url('/assets/image/BRICKWALL.jpeg');
   color: yellow;
 }
 
@@ -134,24 +182,23 @@ main#home h1 {
 
 /* PORTFOLIO PAGE */
 
-.svg {
+/* .svg {
   display: none;
-}
+} */
 
 #udacity-logo {
   fill: #02b3e4;
 }
 
-/* .logo {
+.logo {
   max-width: 100%;
   margin: 5vw 0 0 0;
   min-width: 50px;
   min-height: 50px;
   width: 9.7%;
   height: 9.7%;
-} */
-
-.position {
+}
+*/ .position {
   margin: 0 0 0 7%;
   font-family: 'Fredericka the Great', cursive;
 }
@@ -306,7 +353,30 @@ p {
   }
 }
 
-#contFooter {
+/* ====== Footer  ====== */
+.footer {
   font-family: 'Fredericka the Great', cursive;
   text-align: center;
+}
+
+/*  ==== About Me Page ==== */
+
+#about {
+  background-image: url('/assets/image/darkWoodBG.jpg');
+  background: cover;
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+}
+
+#about p {
+  position: relative;
+  text-size-adjust: 150px;
+  line-height: 60px;
+}
+
+/*==== Contact Page ====*/
+#contactMe {
+  position: relative;
+  margin-top: 100px;
 }
