@@ -1,34 +1,94 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 /*   Body Area          */
-html {
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  position: relative;
+  min-height: 100%;
+}
+
+#container.textName {
+  color: white;
+  text-align: left;
+}
+
+header {
+  background-color: rgba(29, 4, 4, 0.863);
+  position: relative;
+  font-size: 35px;
+  transition: all 2.2s ease-in-out;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -2px 3px 0 black,
+    1px 1px 0 black;
+}
+
+header a:hover {
+  color: yellow;
+  transition: 0.5s ease-in-out;
+}
+
+div,
+#mainNav,
+.topNav {
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+
+.topNav,
+a,
+ul {
+  background-color: rgba(29, 4, 4, 0.863);
+  position: relative;
+  text-align: left;
+  list-style: none;
+}
+
+.topNav,
+li {
+  position: relative;
+  display: inline-block;
+  padding: 5px 5px;
+}
+
+.topNav,
+a {
+  font-weight: normal;
+  padding: 10px 5px;
+  font-size: 0.8em;
+}
+
+a.nav-link {
+  color: white;
+  font-size: 30px;
+}
+
+#mainBody {
   background-image: url('/assets/image/darkWoodBG.jpg');
   background-size: fill;
   background-repeat: no-repeat;
   position: relative;
-  background-image: rgba(0, 0, 0, 0.3);
-  width: 100%;
-  height: 100%;
-}
-
-#mainPage {
-  position: relative;
   font-family: 'Fredericka the Great', cursive;
   line-height: 1;
   color: whitesmoke;
-  transition: all 1.2s ease-in-out;
-  transition: background-color 0.5s;
+  transition: all 2.2s ease-in-out;
+  transition: 2.2;
   width: 100%;
   height: 100%;
+  overflow: auto;
+  padding-bottom: 100px;
 }
 
 /* Main Top Nav */
-
-#rqLogo {
-  text-align: center;
-}
 
 h1,
 h2,
@@ -47,96 +107,21 @@ a {
   text-decoration: none;
 }
 
-header {
-  position: relative;
-  /* text-align: left; */
-  font-size: 35px;
-  /* z-index: 2; */
-  /* width: 100%; */
-  /* padding: 0.7rem; */
-  transition: all 0.1s ease-in-out;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -2px 3px 0 black,
-    1px 1px 0 black;
-  color: yellow;
-}
-
-/* span {
-  color: #eece1a;
-} */
-
-/* .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-} */
-
-/* .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #eece1a;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-} */
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
-#backColor {
-  position: relative;
-  background-color: black;
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  color: yellow;
-}
-
-.topnav {
-  position: relative;
-  text-align: center;
-  word-spacing: 60px;
-  color: yellow;
-}
-
-/* .nav-link {
-  color: yellow;
-}
-
-.menu-nav {
-  list-style-type: none;
-} */
-
 .text-secondary {
   position: relative;
-  color: yellow;
+  color: whitesmoke;
   font-family: 'Fredericka the Great', cursive;
-  padding: 0.7rem;
+  padding: 7.7rem;
   transition: all 1.2s ease-in-out;
+}
+
+.text-addition {
+  position: relative;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  padding: 2.7rem;
+  transition: all 1.2s ease-in-out;
+  font-size: 80px;
 }
 
 .sm-heading {
@@ -146,156 +131,51 @@ header {
 
 main {
   position: relative;
-  padding: 10rem;
+  padding: 5rem;
   height: 100%;
-  word-spacing: 40px;
 }
 
 main .icons {
   margin-top: 1rem;
   margin-left: 20rem;
   color: white;
+  word-spacing: 130px;
 }
 
 main .icons a {
   position: relative;
   padding: 1.5rem;
-  transition: all 1.9s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: white;
 }
 
 main .icons a:hover {
   color: yellow;
+  transition: 0.5s;
+  border-image: none;
 }
 
 main#home {
   width: fit-content;
   overflow: hidden;
+  margin-left: 75px;
 }
 
 main#home h1 {
-  margin-top: 45vh;
+  margin-top: 25vh;
 }
 
-/* i {
-  color: yellow;
-} */
-
-/* PORTFOLIO PAGE */
-
-/* .svg {
-  display: none;
-} */
-
-#udacity-logo {
-  fill: #02b3e4;
-}
-
-.logo {
-  max-width: 100%;
-  margin: 5vw 0 0 0;
-  min-width: 50px;
-  min-height: 50px;
-  width: 9.7%;
-  height: 9.7%;
-}
-*/ .position {
-  margin: 0 0 0 7%;
-  font-family: 'Fredericka the Great', cursive;
-}
-
-/* .introduction {
-  font-family: 'Fredericka the Great', cursive;
-  font-size: 1.6vw;
-  color: #2d3c49;
-  margin-left: 50%;
-} */
-
-/* .introduction:hover {
-  color: #b6496c;
-} */
-
-/* h1:first-of-type {
-  margin-top: 20vw;
-} */
-
-/* hr {
-  max-width: 100%;
-  width: 79%;
-  margin: 3.2% 0 6.5% 13%;
-  background-color: #566991;
-  color: #7d97ad;
-  height: 6px;
-} */
-
-/* .code-image {
-  width: 79%;
-  height: 35vw;
-  margin: 0 0 0 13%;
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  border: 5px dashed black;
-} */
-
-/* .code-image:hover {
-  -webkit-filter: blur(0);
-  filter: blur(0);
-} */
-
-/* .work-title {
-  background-color: #e9ddd7;
-  background-color: hsla(0, 0%, 80%, 0.7);
-  color: #333;
-  width: 85%;
-  padding: 0.7%;
-  margin: 0 0 5vw 10%;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #333;
-  font-size: 5vw;
-  border: 4px inset #a96e58;
-  opacity: 0.7;
-}
-
-.work {
-  display: flex;
-  display: grid;
-  margin-right: 15%;
-  margin-left: 10%;
-  flex-direction: column;
-} */
-
-.work-images {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 1.3s ease-in-out;
-  transition: 1.3s ease-in-out;
-  width: 75%;
-  margin: 50px 4.8% 40px 0;
-  border: 3px double black;
-  padding: 0.5vw;
-  box-shadow: 0.7vw 0px 0.7vw 0px black;
-}
-
-.work-images:hover {
-  -webkit-transform: scale(1.7);
-  transform: scale(1.7);
-}
-
-.line {
-  max-width: 100%;
-  display: flex;
-  display: grid;
-  margin: 0 0 0 13%;
+#home {
+  height: fit-content;
 }
 
 h2 {
   /* text-shadow: 1px 1px 1px white, 0 0 1em white, 0 0 0.1em black; */
-  margin: 0 0 0 3.2%;
   font-family: 'Fredericka the Great', cursive;
-  font-size: 35vw;
   font-weight: 900;
   color: white;
+  margin-top: 8%;
+  font-size: 2vw;
 }
 
 p {
@@ -303,80 +183,204 @@ p {
   transition: 0.3s ease-in-out;
   margin: 2% 0 0 4.5%;
   font-size: 1.8vw;
-  color: #7b8db0;
-}
-
-@media screen and (max-width: 799px) {
-  .work-images {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .work-images:hover {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-  }
-
-  #todos {
-    margin-top: 15%;
-  }
-
-  #animal {
-    margin-top: 10%;
-  }
-
-  p {
-    font-size: 2.5vw;
-  }
-  h2 {
-    font-size: 6vw;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .line {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-  h2 {
-    margin-top: 8%;
-    font-size: 2vw;
-  }
-  .work-images:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  }
-}
-
-@media screen and (max-width: 460px) {
-  hr {
-    width: 85%;
-  }
+  color: white;
 }
 
 /* ====== Footer  ====== */
 .footer {
+  background-color: rgba(29, 4, 4, 0.863);
+  position: relative;
+  height: 60px;
+  clear: both;
   font-family: 'Fredericka the Great', cursive;
   text-align: center;
+  text-emphasis: none;
 }
 
 /*  ==== About Me Page ==== */
 
+h2.sm-heading,
+.text-addition {
+  text-align: center;
+  margin-left: 12px;
+  text-indent: 5px;
+}
+
+.about h4 {
+  background-color: rgba(29, 4, 4, 0.863);
+  font-family: 'Cinzel', serif;
+  border-radius: 10%;
+  word-spacing: 0px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h4 {
+  border-left: 20px;
+}
+
 #about {
-  background-image: url('/assets/image/darkWoodBG.jpg');
+  background-color: url('/assets/image/darkWoodBG.jpg');
   background: cover;
   position: relative;
-  text-align: center;
-  font-size: 25px;
+  text-align: left;
+  font-size: 15px;
+  color: whitesmoke;
+  line-height: 1.5;
+  border-left: 10px;
 }
 
-#about p {
+main#about {
   position: relative;
-  text-size-adjust: 150px;
-  line-height: 60px;
+  mask-border-width: 100%;
+  margin-right: 300px;
+  margin-left: 250px;
 }
 
-/*==== Contact Page ====*/
-#contactMe {
+div.portrait {
+  position: relative;
+  margin-top: 0;
+  margin-left: 0;
+  top: 10px;
+  right: 40px;
+  float: left;
+}
+
+img {
+  border-radius: 15%;
+}
+
+button#myBtn {
   position: relative;
   margin-top: 100px;
+  height: 100px;
+  width: 250px;
+  left: 40%;
+  background-color: rgba(29, 4, 4, 0.863);
+  border-radius: 50%;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+}
+
+.modal {
+  position: relative;
+  z-index: 25;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-size: normal;
+  width: 40%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 1.4s;
+  animation-name: slideIn;
+  animation-duration: 1.4s;
+}
+
+div.modal-content {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  background-color: black;
+  min-height: 10%;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  position: relative;
+  background-color: black;
+  padding: 2px 16px;
+  top: 300px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*   =============    */
+
+/*==== Contact Page ====*/
+
+div,
+.contactMain,
+#mainBody {
+  padding-bottom: 1rem;
+}
+
+div,
+#container {
+  position: relative;
+  min-height: 100%;
+}
+
+label {
+  top: 30px;
+  word-spacing: 30px;
+  border-radius: 20%;
+}
+
+h5 {
+  font-family: 'Pompiere', cursive;
 }
