@@ -15,11 +15,19 @@
       crossorigin="anonymous"
     />
     <link
-    href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
     <script
       defer
@@ -30,59 +38,121 @@
 
   <body id="mainBody">
     <!-- Top nav Bar -->
-    <header>
-      <div class="topnav" id="mainNav">
-        <ul>
-          <li>
-            <img
-              id="rqLogo"
-              src="/assets/image/rqLOGO.png"
-              width="45"
-              height="45"
-              alt="PersonalLogo"
-            />
-          </li>
-          <li><a href="/index.html" class="nav-link"> Home </a></li>
+    <body id="mainBody">
+      <!-- Top nav Bar -->
+      <header>
+        <div class="topnav" id="mainNav">
+          <ul>
+            <li>
+              <img
+                id="rqLogo"
+                src="/assets/image/rqLOGO.png"
+                width="45"
+                height="45"
+                alt="PersonalLogo"
+              />
+            </li>
+            <li><a href="/index.html" class="nav-link"> Home </a></li>
+            <li><a href="/portfolio.html" class="nav-link"> Portfolio </a></li>
+            <li><a href="/contact.html" class="nav-link"> Contact </a></li>
+            <li><a href="/about.html" class="nav-link"> About </a></li>
+          </ul>
+        </div>
+      </header>
+        <main id="homePortolio">
+        <h1 class="lg-heading">
+          <span class="text-secondary">Portfolio</span>
+        </h1>
+  
+        <section class="row" id="portfolio">
+          <div class="slideshow-container">
 
-          <li><a href="/portfolio.html" class="nav-link"> Portfolio </a></li>
-          <li><a href="/contact.html" class="nav-link"> Contact </a></li>
-          <li><a href="/about.html" class="nav-link"> About </a></li>
-        </ul>
-      </div>
-    </header>
-      <main id="home">
-      <h1 class="lg-heading">
-        <span class="text-secondary">Portfolio</span>
-      </h1>
-
-      <section class="row" id="portfolio">
-        <div class="col-sm-3"></div>
-          <h2>Trivia Game</h2>
-          <br>
-          <br>
-            <a href="https://ricoquin.github.io/TriviaGame/">
-              <img src="/assets/image/gamertrivia.png" width="250" height="160" alt="Trivia Game"/>
-            </a>
-      </div>
-      </section>
-
-    </main>
-    <footer>
-      <div class="contFooter">
-        Copyright &copy; Rquintanilla 2019 KUBCS 
-            <div class="icons">
-              <a href="https://github.com/">
-                <i class="fab fa-github"></i>
-              </a>
-
-              <a href="https://www.linkedin.com/in/rico-quintanilla-739006134/">
-                <i class="fab fa-linkedin"></i>
-              </a>
-
-              <a href="https://www.facebook.com/rico.quintanilla">
-                <i class="fab fa-facebook"></i>
-              </a>
+            <div class="mySlides slide">
+              <img src="/assets/image/homeOffice.jpeg" style="width:100%">
+              <div class="textPort">Trivia Game</div>
             </div>
+            
+            <div class="mySlides slide">
+              <img src="/assets/image/ricoGuitar.jpeg" style="width:100%">
+              <div class="textPort">proj</div>
+            </div>
+            
+            <div class="mySlides slide">
+              <img src="/assets/image/roLogo2.jpeg" style="width:100%">
+              <div class="textPort">proj</div>
+            </div>
+
+            <div class="mySlides slide">
+             
+              <img src="/assets/image/roLogo2.jpeg" style="width:100%">
+              <div class="textPort">proj</div>
+            </div>
+
+            <div class="mySlides slide">
+              <img src="/assets/image/roLogo2.jpeg" style="width:100%">
+              <div class="textPort">proj</div>
+            </div>
+
+            <div class="mySlides">
+              <img src="/assets/image/roLogo2.jpeg" style="width:100%">
+              <div class="text">proj</div>
+            </div>
+
+            <div class="mySlides">
+              <img src="/assets/image/roLogo2.jpeg" style="width:100%">
+              <div class="textPort">Caption Three</div>
+            </div>
+
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </section>
+
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+          
+  
+
+      </main>
+    </div>
+    <footer>
+      <div class="footer">
+        Copyright &copy; Rquintanilla 2019 KUBCS
       </div>
     </footer>
   </body>
