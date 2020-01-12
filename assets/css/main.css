@@ -393,7 +393,8 @@ img {
 
 main,
 #homePortfolio {
-  backgroundcolor: red;
+  text-align: center;
+  padding: 15rem;
 }
 
 .slideshow-container {
@@ -436,10 +437,17 @@ main,
 }
 
 .slide {
+  text-align: center;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+
+#slideBar,
+a.prev {
+  text-align: center;
+  text-align: bottom;
 }
 
 @-webkit-keyframes fade {
