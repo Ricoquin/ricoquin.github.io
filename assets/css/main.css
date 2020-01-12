@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
 /*   Body Area          */
@@ -10,12 +9,7 @@ html,
 body {
   position: relative;
   width: 100%;
-  height: 100%;
-}
-
-#container {
-  position: relative;
-  min-height: 100%;
+  max-height: 100%;
 }
 
 #container.textName {
@@ -211,8 +205,6 @@ h2.sm-heading,
   font-family: 'Cinzel', serif;
   border-radius: 10%;
   word-spacing: 0px;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 h4 {
@@ -227,21 +219,18 @@ h4 {
   font-size: 15px;
   color: whitesmoke;
   line-height: 1.5;
-  border-left: 10px;
+  margin-bottom: 40%;
 }
 
 main#about {
   position: relative;
-  mask-border-width: 100%;
-  margin-right: 300px;
-  margin-left: 250px;
+  padding-bottom: 0;
+  margin-bottom: 0px;
 }
 
 div.portrait {
   position: relative;
-  margin-top: 0;
   margin-left: 0;
-  top: 10px;
   right: 40px;
   float: left;
 }
@@ -393,8 +382,10 @@ img {
 
 main,
 #homePortfolio {
+  position: relative;
   text-align: center;
   padding: 15rem;
+  padding-left: 30rem;
 }
 
 .slideshow-container {
@@ -444,9 +435,10 @@ main,
   animation-duration: 1.5s;
 }
 
-#slideBar,
-a.prev {
-  text-align: center;
+div,
+.slideBar {
+  /* position: absolute; */
+  max-width: 100%;
   text-align: bottom;
 }
 
