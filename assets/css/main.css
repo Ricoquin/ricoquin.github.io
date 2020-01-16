@@ -1,67 +1,470 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/*   Body Area          */
 html,
 body {
-  background: #444;
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+}
+
+#container.textName {
   color: white;
-  font-family: 'Trade Winds'cursive;
-  margin: 0;
+  text-align: left;
+}
+
+header {
+  background-color: rgba(29, 4, 4, 0.863);
+  position: relative;
+  font-size: 35px;
+  transition: all 2.2s ease-in-out;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -2px 3px 0 black,
+    1px 1px 0 black;
+}
+
+header a:hover {
+  color: yellow;
+  transition: 0.5s ease-in-out;
+}
+
+div,
+#mainNav,
+.topNav {
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+
+.topNav,
+a,
+ul {
+  background-color: rgba(29, 4, 4, 0.863);
+  position: relative;
+  text-align: left;
+  list-style: none;
+}
+
+.topNav,
+li {
+  position: relative;
+  display: inline-block;
+  padding: 5px 5px;
+}
+
+.topNav,
+a {
+  font-weight: normal;
+  padding: 10px 5px;
+  font-size: 0.8em;
+}
+
+a.nav-link {
+  color: white;
+  font-size: 30px;
+}
+
+#mainBody {
+  background-image: url('/assets/image/darkWoodBG.jpg');
+  background-size: fill;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: 'Fredericka the Great', cursive;
+  line-height: 1;
+  color: whitesmoke;
+  transition: all 2.2s ease-in-out;
+  transition: 2.2;
+  width: 100%;
   height: 100%;
-  line-height: 1.0; }
-  html#bg-img,
-  body#bg-img {
-    background: url(/assets/image/rico.jpg) absolute cover cover fixed;
-    background-attachment: fixed;
-    background-size: cover; }
-    html#bg-img .overlay,
-    body#bg-img .overlay {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+/* Main Top Nav */
 
 h1,
 h2,
 h3 {
-  margin: 0;
-  font-weight: 400; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-size: 6rem; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+  font-weight: 400;
+}
+
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 5.5rem;
+}
 
 a {
-  color: #fff;
-  text-decoration: none; }
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
+  color: white;
+  text-decoration: none;
+}
 
 .text-secondary {
-  color: #eece1a; }
+  position: relative;
+  color: whitesmoke;
+  font-family: 'Fredericka the Great', cursive;
+  padding: 7.7rem;
+  transition: all 1.2s ease-in-out;
+}
+
+.text-addition {
+  position: relative;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  padding: 2.7rem;
+  transition: all 1.2s ease-in-out;
+  font-size: 80px;
+}
+
+.sm-heading {
+  margin-top: 1rem;
+  margin-left: 5rem;
+}
 
 main {
-  padding: 4rem;
-  height: 100%; }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.7rem;
-      transition: all 1.5s ease-out; }
-      main .icons a:hover {
-        color: #eece1a; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }
+  position: relative;
+  padding: 5rem;
+  height: 100%;
+}
+
+main .icons {
+  margin-top: 1rem;
+  margin-left: 20rem;
+  color: white;
+  word-spacing: 130px;
+}
+
+main .icons a {
+  position: relative;
+  padding: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+
+main .icons a:hover {
+  color: yellow;
+  transition: 0.5s;
+  border-image: none;
+}
+
+main#home {
+  width: fit-content;
+  overflow: hidden;
+  margin-left: 75px;
+}
+
+main#home h1 {
+  margin-top: 25vh;
+}
+
+#home {
+  height: fit-content;
+}
+
+h2 {
+  /* text-shadow: 1px 1px 1px white, 0 0 1em white, 0 0 0.1em black; */
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: 900;
+  color: white;
+  margin-top: 8%;
+  font-size: 2vw;
+}
+
+p {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin: 2% 0 0 4.5%;
+  font-size: 1.8vw;
+  color: white;
+}
+
+/* ====== Footer  ====== */
+.footer {
+  background-color: rgba(29, 4, 4, 0.863);
+  position: relative;
+  height: 60px;
+  clear: both;
+  font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  text-emphasis: none;
+}
+
+/*  ==== About Me Page ==== */
+
+h2.sm-heading,
+.text-addition {
+  text-align: center;
+  margin-left: 12px;
+  text-indent: 5px;
+}
+
+.about h4 {
+  background-color: rgba(29, 4, 4, 0.863);
+  font-family: 'Cinzel', serif;
+  border-radius: 10%;
+  word-spacing: 0px;
+}
+
+h4 {
+  border-left: 20px;
+}
+
+#about {
+  background-color: url('/assets/image/darkWoodBG.jpg');
+  background: cover;
+  position: relative;
+  text-align: left;
+  font-size: 15px;
+  color: whitesmoke;
+  line-height: 1.5;
+  margin-bottom: 40%;
+}
+
+main#about {
+  position: relative;
+  padding-bottom: 0;
+  margin-bottom: 0px;
+}
+
+div.portrait {
+  position: relative;
+  margin-left: 0;
+  right: 40px;
+  float: left;
+}
+
+img {
+  border-radius: 15%;
+}
+
+button#myBtn {
+  position: relative;
+  margin-top: 100px;
+  height: 100px;
+  width: 250px;
+  left: 40%;
+  background-color: rgba(29, 4, 4, 0.863);
+  border-radius: 50%;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+}
+
+.modal {
+  position: relative;
+  z-index: 25;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-size: normal;
+  width: 40%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 1.4s;
+  animation-name: slideIn;
+  animation-duration: 1.4s;
+}
+
+div.modal-content {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  background-color: black;
+  min-height: 10%;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+  position: relative;
+  background-color: black;
+  padding: 2px 16px;
+  top: 300px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*   =============    */
+
+/*==== Contact Page ====*/
+
+div,
+.contactMain,
+#mainBody {
+  padding-bottom: 1rem;
+}
+
+div,
+#container {
+  position: relative;
+  min-height: 100%;
+}
+
+label {
+  top: 30px;
+  word-spacing: 30px;
+  border-radius: 20%;
+}
+
+h5 {
+  font-family: 'Pompiere', cursive;
+}
+
+/*  Portfolio  */
+
+img {
+  vertical-align: middle;
+}
+
+main,
+#homePortfolio {
+  position: relative;
+  text-align: center;
+  padding: 15rem;
+  padding-left: 30rem;
+}
+
+.slideshow-container {
+  max-width: 800px;
+  position: absolute;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 1px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 9);
+}
+
+.text {
+  position: absolute;
+  color: white;
+  font-size: 55px;
+  padding: 8px 12px;
+  bottom: 8px;
+  text-align: center;
+}
+
+.slide {
+  text-align: center;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+div,
+.slideBar {
+  /* position: absolute; */
+  max-width: 100%;
+  text-align: bottom;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}

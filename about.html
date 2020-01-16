@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta p-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link type="text/javascript" href="assets/js/main.js" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link
+    href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.11.2/js/v4-shims.js"
+    ></script>
+    <title>RQ_Portfolio</title>
+  </head>
+
+  <body id="mainBody">
+    <!-- Top nav Bar -->
+    <header>
+      <div class="topnav" id="mainNav">
+        <ul>
+          <li>
+            <img
+              id="rqLogo"
+              src="/assets/image/rqLOGO.png"
+              width="45"
+              height="45"
+              alt="PersonalLogo"
+            />
+          </li>
+          <li><a href="/index.html" class="nav-link"> Home </a></li>
+
+          <li><a href="/portfolio.html" class="nav-link"> Portfolio </a></li>
+          <li><a href="/contact.html" class="nav-link"> Contact </a></li>
+          <li><a href="/about.html" class="nav-link"> About </a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="container">
+      <main id="about">
+        <h2 class="sm-heading">
+          <span class="text-addition"
+            >About Me</span>
+        </h2>
+  
+        <br />
+
+      <div class="portrait">
+        <img src="/assets/image/ricoGuitar.jpeg" height=350px width=350px>
+      </div>
+
+
+
+
+
+              <h4 >
+                Welcome to my page, My name is Rico. I live in Kansas City Mo, I love music, spending time with my wonderful friends and fantastic family. I
+                write music on the side. I chose to code as a fullstack developer because of seeing the development from front to back. I am able to
+                assist/work with backend across multiple stacks. Currently I am enrolled at University of Kansas FullStack Coding Bootcamp . Understanding intigrations with database models to front end JS are an important skill needed to help with developing or manage security platforms to protect vital information in several important aspects of how we live today.  My goal as a coder is to help with bringing a user friendly and safe designs that are simple, fast, efficient and easy to understand. Thanks again and please message me if you have any
+                Questions, just click below to see current skill set. 
+              </h4>
+
+              <br>
+              <br>
+
+              <button id="myBtn">Click Me !</button>
+              <div id="myModal" class="modal">
+               
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>Skills:   HTML, CSS, JavaScript, JQuery, Json, Api Routing, Git, Bootstrap, Materilize, Jumbotron, MySQL Workbench, Postman, NodeJs, Express building on VsCode </p>
+                </div>
+              
+              </div>
+</div>
+            
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+      </main>
+      <!-- <footer>
+        <div class="footer">
+          Copyright &copy; Rquintanilla 2019 KUBCS
+        </div>
+      </footer> -->
+  
+  </body>
+</html>
+
