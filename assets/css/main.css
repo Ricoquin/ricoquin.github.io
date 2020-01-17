@@ -180,14 +180,10 @@ p {
 }
 
 /* ====== Footer  ====== */
-.footer {
-  background-color: rgba(29, 4, 4, 0.863);
-  position: relative;
-  height: 60px;
-  clear: both;
-  font-family: 'Fredericka the Great', cursive;
+footer {
   text-align: center;
-  text-emphasis: none;
+  background-color: rgba(29, 4, 4, 0.863);
+  font-family: 'Fredericka the Great', cursive;
 }
 
 /*  ==== About Me Page ==== */
