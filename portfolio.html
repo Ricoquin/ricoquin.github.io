@@ -33,122 +33,177 @@
       defer
       src="https://use.fontawesome.com/releases/v5.11.2/js/v4-shims.js"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>RQ_Portfolio</title>
   </head>
-
   <body id="mainBody">
     <!-- Top nav Bar -->
-    <body id="mainBody">
-      <!-- Top nav Bar -->
-      <header>
-        <div class="topnav" id="mainNav">
-          <ul>
-            <li>
-              <img
-                id="rqLogo"
-                src="/assets/image/rqLOGO.png"
-                width="45"
-                height="45"
-                alt="PersonalLogo"
-              />
-            </li>
-            <li><a href="/index.html" class="nav-link"> Home </a></li>
-            <li><a href="/portfolio.html" class="nav-link"> Portfolio </a></li>
-            <li><a href="/contact.html" class="nav-link"> Contact </a></li>
-            <li><a href="/about.html" class="nav-link"> About </a></li>
-          </ul>
+    <header>
+      <div class="topnav" id="mainNav">
+        <ul>
+          <li>
+            <img
+              id="rqLogo"
+              src="/assets/image/rqLOGO.png"
+              width="45"
+              height="45"
+              alt="PersonalLogo"
+            />
+          </li>
+          <li><a href="/index.html" class="nav-link"> Home </a></li>
+          <li><a href="/portfolio.html" class="nav-link"> Portfolio </a></li>
+          <li><a href="/contact.html" class="nav-link"> Contact </a></li>
+          <li><a href="/about.html" class="nav-link"> About </a></li>
+        </ul>
+      </div>
+    </header>
+    <style>
+      .carousel-inner > .item > img,
+      .carousel-inner > .item > a > img {
+        width: 70%;
+        margin: auto;
+      }
+    </style>
+    <div class="caroselContainer">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <button>
+              <a href="https://limitless-reaches-90416.herokuapp.com/burgers"
+                ><img
+                  src="assets/image/BurgerApp.jpeg"
+                  alt="NodeBurgerApp"
+                  width="460"
+                  height="345"
+              /></a>
+            </button>
+            <div class="carousel-caption">
+              <h3>Node Burger App</h3>
+            </div>
+            <p>
+              Skills: Heroku, Node.JS, MySQL, Express, React, ORM, Handlebars,
+              Model-View-Controller
+            </p>
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/image/Crystal Game.jpeg"
+              alt="Chania"
+              width="460"
+              height="345"
+            />
+            <div class="carousel-caption">
+              <h3>Chania</h3>
+            </div>
+            <p>
+              The atmosphere in Chania has a touch of Florence and Venice.
+            </p>
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/image/Crystal Game.jpeg"
+              alt="Chania"
+              width="460"
+              height="345"
+            />
+            <div class="carousel-caption">
+              <h3>Chania</h3>
+            </div>
+            <p>
+              The atmosphere in Chania has a touch of Florence and Venice.
+            </p>
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/image/Crystal Game.jpeg"
+              alt="Chania"
+              width="460"
+              height="345"
+            />
+            <div class="carousel-caption">
+              <h3>Chania</h3>
+            </div>
+            <p>
+              The atmosphere in Chania has a touch of Florence and Venice.
+            </p>
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/image/Crystal Game.jpeg"
+              alt="Chania"
+              width="460"
+              height="345"
+            />
+            <div class="carousel-caption">
+              <h3>Chania</h3>
+            </div>
+            <p>
+              The atmosphere in Chania has a touch of Florence and Venice.
+            </p>
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/image/Crystal Game.jpeg"
+              alt="Flower"
+              width="460"
+              height="345"
+            />
+            <div class="carousel-caption">
+              <h3>Flowers</h3>
+              <p>Beautiful flowers in Kolymbari, Crete.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img
+              src="assets/image/Crystal Game.jpeg"
+              alt="Flower"
+              width="460"
+              height="345"
+            />
+            <div class="carousel-caption">
+              <h3>Flowers</h3>
+              <p>Beautiful flowers in Kolymbari, Crete.</p>
+            </div>
+          </div>
         </div>
-      </header>
-        <main id="homePortolio">
-  
-        <section class="row" id="portfolio">
-          <div class="slideshow-container">
-            <h1 class="lg-heading">
-              <span class="textName">Portfolio</span>
-            </h1>
 
-            <div class="mySlides slide">
-              <img src="/assets/image/homeOffice.jpeg" height="60%"  width="80%">
-              <div class="textPort">Trivia Game</div>
-            </div>
-            
-            <div class="mySlides slide">
-              <div class="mySlides slide">
-                <img src="/assets/image/homeOffice.jpeg" height="60%"  width="80%">
-                <div class="textPort">Trivia Game</div>
-              </div>
-              
-            <div class="mySlides slide">
-              <img src="/assets/image/homeOffice.jpeg" height="60%"  width="80%">
-              <div class="textPort">Trivia Game</div>
-            </div>
-
-            <div class="mySlides slide">
-              <img src="/assets/image/homeOffice.jpeg" height="60%"  width="80%">
-              <div class="textPort">Trivia Game</div>
-            </div>
-
-            <div class="mySlides slide">
-              <img src="/assets/image/homeOffice.jpeg" height="60%"  width="80%">
-              <div class="textPort">Trivia Game</div>
-            </div>
-
-            <div class="mySlides slide">
-              <img src="/assets/image/homeOffice.jpeg" height="60%"  width="80%">
-              <div class="textPort">Trivia Game</div>
-            </div>
-
-            <div class="mySlides slide">
-              <img src="/assets/image/homeOffice.jpeg" height="60%"  width="80%">
-              <div class="textPort">Trivia Game</div>
-            </div>
-
-              <div class="slideBar">
-                <a class="prev" onclick="plusSlides(-1)"> - </a>
-                <a class="next" onclick="plusSlides(1)"> + </a>
-              </div>
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-        </section>
-
-        <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-          }
-          </script>
-          
-  
-
-      </main>
+        <!-- Left and right controls -->
+        <a
+          class="left carousel-control"
+          href="#myCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span
+            class="glyphicon glyphicon-chevron-left"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="right carousel-control"
+          href="#myCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span
+            class="glyphicon glyphicon-chevron-right"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
     <!-- <footer>
       <div class="footer">
