@@ -25,7 +25,10 @@ html {
 }
 
 .img4 {
-  background-image: url('/images/img4.jpeg');
+  color: black;
+}
+.img4 {
+  background-image: url('/images/Qhighrez.png');
   min-height: 500px;
 }
 
@@ -73,7 +76,7 @@ section {
 
 .introImgText {
   position: absolute;
-  top: 20%;
+  top: 10%;
   padding: 10px 20px;
   width: 100%;
   text-align: left;
@@ -93,10 +96,22 @@ section {
   letter-spacing: 4px;
 }
 
+.im4,
+p.endingStatement {
+  position: relative;
+  top: 5%;
+  padding: 10px 20px;
+  margin: 50px;
+  width: 100%;
+  text-align: left;
+  color: whitesmoke;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
 .ptext .border {
   background-color: #fff;
   color: black;
-  padding: 20px;
 }
 
 .ptext,
