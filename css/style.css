@@ -3,8 +3,7 @@ html {
   height: 75%;
   margin: 0;
   font-size: 16px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lora', serif;
   font-weight: 400;
   line-height: 1.8em;
   color: #666;
@@ -107,7 +106,7 @@ section {
 
 .feedback-input {
   color: white;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Lora', serif;
   font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
