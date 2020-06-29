@@ -6,7 +6,14 @@ html {
   font-family: 'Lora', serif;
   font-weight: 400;
   line-height: 1.8em;
-  color: #666;
+  color: black;
+}
+
+nav {
+  background-color: rgb(51, 51, 51);
+  color: black;
+  padding: 20px, 20px;
+  word-spacing: normal;
 }
 
 .img1 {
@@ -109,6 +116,10 @@ p.endingStatement {
   letter-spacing: 4px;
 }
 
+#endSection {
+  border: solid #666;
+}
+
 .ptext .border {
   background-color: #fff;
   color: black;
@@ -136,8 +147,26 @@ p.endingStatement {
   outline: 0;
 }
 
+form {
+  margin-block: 20px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: lightslategray;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
 .feedback-input:focus {
-  border: 2px solid green;
+  border: 2px solid lightslategray;
 }
 
 textarea {
@@ -148,9 +177,9 @@ textarea {
 
 [type='submit'] {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
+  width: 30%;
   background: lightgray;
-  border-radius: 5px;
+  border-radius: 45px;
   border: 0;
   cursor: pointer;
   color: white;
@@ -162,7 +191,11 @@ textarea {
   font-weight: 700;
 }
 [type='submit']:hover {
-  background: green;
+  background: lightslategray;
+}
+
+[type='text']:hover {
+  background: lightslategray;
 }
 
 form {
