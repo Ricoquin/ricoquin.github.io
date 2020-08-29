@@ -9,10 +9,6 @@ html {
   color: black;
 }
 
-.row {
-  float: right;
-}
-
 .projQuote {
   position: relative;
   padding: 10px 20px;
@@ -33,12 +29,15 @@ p.projQuote,
 
 }
 
+#skillSection {
+  border: grey 1px;
+}
 
 img {
   border-radius: 80%;
   float: left;
   margin-left: 10px;
-  -moz-box-shadow: 1px 1px 2px rgba(40, 40, 40, 0.8);
+  box-shadow: 1px 1px 2px rgba(40, 40, 40, 0.8);
   -webkit-box-shadow: 1px 1px 2px rgba(40, 40, 40, 0.8);
 }
 
@@ -46,7 +45,6 @@ nav {
   background-color: rgb(51, 51, 51);
   color: black;
   padding: 20px, 20px;
-  word-spacing: normal;
 }
 
 .img1 {
@@ -82,11 +80,6 @@ nav {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  /* 
-     fixed = parallax  
-     scroll = normal
-  */
   background-attachment: fixed;
 }
 
@@ -207,48 +200,17 @@ form {
   border: 2px solid lightslategray;
 }
 
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize: vertical;
-}
 
-[type='submit'] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 30%;
-  background: lightgray;
-  border-radius: 45px;
-  border: 0;
-  cursor: pointer;
-  color: white;
-  font-size: 24px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-  font-weight: 700;
-}
 
-[type='submit']:hover {
-  background: lightslategray;
-}
-
-[type='text']:hover {
-  background: lightslategray;
-}
-
-form {
-  text-align: center;
-  padding: 50px 100px;
-}
 
 footer {
+  border-top-style: solid;
   text-align: center;
-  color: white;
+  color: grey;
   background-color: black;
 }
 
-@media only screen and (max-width:800px) {
+div. @media only screen and (max-width:800px) {
 
   /* For tablets: */
   .main {
@@ -279,3 +241,4 @@ footer {
       background-attachment: scroll;
     }
   }
+}
