@@ -248,12 +248,34 @@ footer {
   background-color: black;
 }
 
-@media (max-width: 568px) {
+@media only screen and (max-width:800px) {
 
-  .img1,
-  .img2,
-  .img3,
-  .img4 {
-    background-attachment: scroll;
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+
+  .right {
+    width: 100%;
   }
 }
+
+@media only screen and (max-width:500px) {
+
+  /* For mobile phones: */
+  .menu,
+  .main,
+  .right {
+    width: 100%;
+  }
+
+  @media (max-width: 568px) {
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+      background-attachment: scroll;
+    }
+  }
