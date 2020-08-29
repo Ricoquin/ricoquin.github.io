@@ -15,7 +15,6 @@ html {
 
 .projQuote {
   position: relative;
-  top: 5%;
   padding: 10px 20px;
   margin: 400px;
   text-align: left;
@@ -24,17 +23,19 @@ html {
   letter-spacing: 4px;
 }
 
-p.projQuote {
+p.projQuote,
+#text {
+  padding-top: 75px;
   text-align: center;
-  padding-left: 40%;
   width: 80%;
   color: #282e34;
   letter-spacing: 4px;
+
 }
 
 
 img {
-  border-radius: 1%;
+  border-radius: 80%;
   float: left;
   margin-left: 10px;
   -moz-box-shadow: 1px 1px 2px rgba(40, 40, 40, 0.8);
@@ -150,7 +151,11 @@ p.endingStatement {
 }
 
 #endSection {
-  border: solid #666;
+  border: 5px solid #666;
+  background-color: #282e34;
+  width: 100%;
+  padding: 25px;
+  margin: 25px #282e34;
 }
 
 .ptext .border {
