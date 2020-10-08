@@ -1,127 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Profile</title>
-</head>
-
-<body>
-  <nav>
-    <div class="nav-wrapper">
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="img1">
-
-
-    <div class="introImgText">
-      <span class="border trans" id="imgOneText">
-        Rico
-      </span>
-      <br />
-      <span class="border trans" id="imgOneText">
-        Quintanilla
-      </span>
-      <br />
-      <br />
-      <span class="border trans" id="imgOneText">
-        Full Stack Developer
-      </span>
-      <br />
-    </div>
-  </div>
-  <section class="section section-light">
-
-    <h2>About Me</h2>
-    <p>
-      Throughout my career, I have contributed to positive business results
-      through effective organization, prioritization and follow-through of key
-      organizational projects. My strengths and qualifications are an ideal
-      match for the Full Stack Developer requirements that will bring
-      immediate value. Moreover, I am competent in javascript and HTML with
-      proficiency in CSS leaning towards Front-End Developer roles.
-    </p>
-    <p>
-      In August of 2019 I elected to enroll in the University of Kansas
-      Full-Stack Coding Bootcamp. The time that I was able to commit to my
-      education has been invaluable to my professional growth, and I am eager
-      to re-enter the professional sphere and apply my newfound qualifications
-      and knowledge to the job. My love for coding was born.
-    </p>
-
-    <br />
-  </section>
-
-  </div>
-  </div>
-  </section>
-
-
-  <section class="section section-dark">
-    <h2>Skills</h2>
-    <div class="row">
-      <div class="col s4">
-        <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="material-icons">laptop_mac</i></h2>
-          <h6 class="center">HTML, CSS, JS, Jquery</h6>
-          <p class="light">Creating responsive design models applying Jquery at times to create css animations.</p>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Rico's bio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/icofont.css" />
+    <link rel="stylesheet" href="./assets/css/icofont.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Shadows+Into+Light&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="masthead">
+        <div class="container">
+          <!-- Logo here when created -->
+          <a href="index.html" id="logo"></a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><span class="icofont-navigation-menu"></span></li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <div class="col s4">
-        <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="material-icons">phone_iphone</i></h2>
-          <h6 class="center">MySQL, MongoDB</h6>
-          <p class="light">An understanding of relational database management systems(RDBMS) and MongoDB query
-            language
-            (MQL). Knowing when to adoptwhat db model is suited best for projects.</p>
-        </div>
-      </div>
-      <div class="col s4">
-        <div class="icon-block">
-          <h2 class="center light-blue-text"><i class="material-icons">tablet</i></h2>
-          <h6 class="center">Currently Researching</h6>
+      </header>
 
-          <p class="light">AWS Cloud Computing, Event notifications using SES,SNS,SQS, Amazon Kenesis Data Streams
+      <main class="container">
+        <section class="main-section">
+          <h1>Rico Quintanilla</h1>
+
+          <p>
+            I love music, live preferably. I have a couple guitars at home that
+            I pick up at least once a day to unwind. Coding podcasts and videos
+            before crashing.
+            <img
+              src="assets/images/rico.png"
+              class="auth-image"
+              alt="placeholder"
+            />I have an amazing wife who is also my best friend and beautiful
+            daughter we could not be more proud of. I love soccer, and playing a
+            round of golf when I can with friends or hitting the range. I am
+            told I make some pretty good pancakes too.
           </p>
-        </div>
-      </div>
+          <p>
+            Throughout my career, I have contributed to positive business
+            results through effective organization.My strengths and
+            qualifications are an ideal match for the Full Stack Developer
+            requirements that will bring immediate value.
+          </p>
+          <p>
+            In August of 2019 I elected to enroll in the University of Kansas
+            Full-Stack Coding Bootcamp. So glad I did .
+          </p>
+        </section>
+      </main>
+      <div class="push"></div>
     </div>
-  </section>
 
-  <!-- <section class="section section-dark" id="skillSection">
-    <h2>Contact Me</h2>
-    <form>
-      <input name="name" type="text" class="feedback-input" placeholder="Name" />
-      <input name="email" type="text" class="feedback-input" placeholder="Email" />
-      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-      <input type="submit" value="SUBMIT" />
-    </form>
-
-    </p>
-  </section> -->
-  <footer class="section section-dark">
-    <div class="footer-copyright">
-      rquintanilla © 2020 Copyright
-      <a href="https://www.facebook.com/rico.quintanilla" class="fa fa-facebook"></a>
-      <a href="https://www.linkedin.com/in/ricardo-quintanilla-739006134/" class="fa fa-linkedin"></a>
-      <a href="https://github.com/Ricoquin" class="fa fa-github"></a>
-    </div>
-  </footer>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
-
+    <footer>
+      <div class="container">rquintanilla&copy; Copyright 2020</div>
+      <ul class="iconList">
+        <li>
+          <span class="icofont-facebook"></span>
+          <span class="icofont-github"></span>
+          <span class="icofont-linkedin"></span>
+          <span class="icofont-twitter"></span>
+          <span class="icofont-youtube"></span>
+          <span class="icofont-reddit"></span>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
