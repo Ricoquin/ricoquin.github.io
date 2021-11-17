@@ -20,7 +20,6 @@ body {
 
 html,
 body {
-  height: 100%;
   /* Visual */
   background: url('../images/pier.jpeg');
   background-size: cover;
@@ -164,6 +163,7 @@ nav a {
   /* Typography */
   color: whitesmoke;
   text-decoration: none;
+  padding-left: 35px;
 }
 
 nav a:hover {
@@ -181,6 +181,11 @@ nav li:first-child {
   border-left: 0 none;
 }
 
+#mSportfolio img{
+
+  margin-left: 50%;
+
+}
 /* footer */
 
 footer,
@@ -225,7 +230,7 @@ main {
 
   /* Visual */
   border: 30px solid black;
-  animation: text-focus-in 3s;
+  animation: text-focus-in 1s;
 }
 
 .auth-image {
