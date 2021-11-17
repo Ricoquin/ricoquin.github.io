@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About | Rico's bio</title>
+    <title>About | Your Name</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/icofont.css" />
     <link rel="stylesheet" href="./assets/css/icofont.min.css" />
@@ -12,18 +12,18 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div class="wrapper">
       <header id="masthead">
         <div class="container">
-          <!-- Logo here when created -->
           <a href="index.html" id="logo"></a>
           <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="portfolio.html">Portfolio</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><span class="icofont-navigation-menu"></span></li>
+              <li><span class="icofont-server"></span></li>
             </ul>
           </nav>
         </div>
@@ -31,31 +31,41 @@
 
       <main class="container">
         <section class="main-section">
-          <h1>Rico Quintanilla</h1>
+          <h1>Stay Connected</h1>
 
-          <p>
-            I love music, live preferably. I have a couple guitars at home that
-            I pick up at least once a day to unwind. Coding podcasts and videos
-            before crashing.
-            <img
-              src="assets/images/rico.png"
-              class="auth-image"
-              alt="placeholder"
-            />I have an amazing wife who is also my best friend and beautiful
-            daughter we could not be more proud of. I love soccer, and playing a
-            round of golf when I can with friends or hitting the range. I am
-            told I make some pretty good pancakes too.
-          </p>
-          <p>
-            Throughout my career, I have contributed to positive business
-            results through effective organization.My strengths and
-            qualifications are an ideal match for the Full Stack Developer
-            requirements that will bring immediate value.
-          </p>
-          <p>
-            In August of 2019 I elected to enroll in the University of Kansas
-            Full-Stack Coding Bootcamp. So glad I did .
-          </p>
+          <form id="contact-form">
+            <ul>
+              <li>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Smith"
+                  required="required"
+                />
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  required="required"
+                />
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required="required"
+                ></textarea>
+              </li>
+            </ul>
+            <input type="submit" />
+          </form>
         </section>
       </main>
       <div class="push"></div>
