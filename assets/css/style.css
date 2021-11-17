@@ -140,7 +140,7 @@ nav {
   float: right;
 
   /* Positioning */
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 nav li {
@@ -549,7 +549,6 @@ input[type='submit'] {
   content: attr(data-title);
   font-size: 24px;
   top: calc(50% - 0.5em);
-  left: 0;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
